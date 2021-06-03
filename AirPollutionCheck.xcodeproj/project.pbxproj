@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24A120DDF09EFCA6CC5F3C16 /* Pods_AirPollutionCheck.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 315A36D38634675FAB89E6A4 /* Pods_AirPollutionCheck.framework */; };
 		B79182812660E50F002B5224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79182802660E50F002B5224 /* AppDelegate.swift */; };
 		B79182832660E50F002B5224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79182822660E50F002B5224 /* SceneDelegate.swift */; };
 		B79182852660E50F002B5224 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79182842660E50F002B5224 /* HomeViewController.swift */; };
@@ -17,9 +18,12 @@
 		B79182982660F3AD002B5224 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79182962660F3AD002B5224 /* WeatherCollectionViewCell.swift */; };
 		B79182992660F3AD002B5224 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79182972660F3AD002B5224 /* WeatherCollectionViewCell.xib */; };
 		B791829B2660F9C6002B5224 /* PraciceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791829A2660F9C6002B5224 /* PraciceViewController.swift */; };
+		B7A7B9A62667F26800E45307 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A7B9A52667F26800E45307 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E52125AC52D4D5873BD81F6 /* Pods-AirPollutionCheck.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPollutionCheck.release.xcconfig"; path = "Target Support Files/Pods-AirPollutionCheck/Pods-AirPollutionCheck.release.xcconfig"; sourceTree = "<group>"; };
+		315A36D38634675FAB89E6A4 /* Pods_AirPollutionCheck.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirPollutionCheck.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B791827D2660E50F002B5224 /* AirPollutionCheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirPollutionCheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B79182802660E50F002B5224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B79182822660E50F002B5224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		B79182962660F3AD002B5224 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		B79182972660F3AD002B5224 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 		B791829A2660F9C6002B5224 /* PraciceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraciceViewController.swift; sourceTree = "<group>"; };
+		B7A7B9A52667F26800E45307 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C82E6E4F32E413DE32F9E1B5 /* Pods-AirPollutionCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPollutionCheck.debug.xcconfig"; path = "Target Support Files/Pods-AirPollutionCheck/Pods-AirPollutionCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24A120DDF09EFCA6CC5F3C16 /* Pods_AirPollutionCheck.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +57,8 @@
 			children = (
 				B791827F2660E50F002B5224 /* AirPollutionCheck */,
 				B791827E2660E50F002B5224 /* Products */,
+				DE97337E7AB4C206E6166F3A /* Pods */,
+				ECA9E8EF965062B33515BEEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +73,7 @@
 		B791827F2660E50F002B5224 /* AirPollutionCheck */ = {
 			isa = PBXGroup;
 			children = (
+				B7A7B9A42667F21C00E45307 /* Util */,
 				B79182802660E50F002B5224 /* AppDelegate.swift */,
 				B79182822660E50F002B5224 /* SceneDelegate.swift */,
 				B79182842660E50F002B5224 /* HomeViewController.swift */,
@@ -79,6 +89,31 @@
 			path = AirPollutionCheck;
 			sourceTree = "<group>";
 		};
+		B7A7B9A42667F21C00E45307 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B7A7B9A52667F26800E45307 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		DE97337E7AB4C206E6166F3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C82E6E4F32E413DE32F9E1B5 /* Pods-AirPollutionCheck.debug.xcconfig */,
+				0E52125AC52D4D5873BD81F6 /* Pods-AirPollutionCheck.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECA9E8EF965062B33515BEEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				315A36D38634675FAB89E6A4 /* Pods_AirPollutionCheck.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B79182912660E510002B5224 /* Build configuration list for PBXNativeTarget "AirPollutionCheck" */;
 			buildPhases = (
+				B3715F137C2DE7CD3F6111C4 /* [CP] Check Pods Manifest.lock */,
 				B79182792660E50F002B5224 /* Sources */,
 				B791827A2660E50F002B5224 /* Frameworks */,
 				B791827B2660E50F002B5224 /* Resources */,
+				CE9B04DE5F35AF118202BFA2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +182,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B3715F137C2DE7CD3F6111C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirPollutionCheck-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9B04DE5F35AF118202BFA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirPollutionCheck/Pods-AirPollutionCheck-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirPollutionCheck/Pods-AirPollutionCheck-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirPollutionCheck/Pods-AirPollutionCheck-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B79182792660E50F002B5224 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -154,6 +233,7 @@
 				B79182852660E50F002B5224 /* HomeViewController.swift in Sources */,
 				B791829B2660F9C6002B5224 /* PraciceViewController.swift in Sources */,
 				B79182812660E50F002B5224 /* AppDelegate.swift in Sources */,
+				B7A7B9A62667F26800E45307 /* Constants.swift in Sources */,
 				B79182832660E50F002B5224 /* SceneDelegate.swift in Sources */,
 				B79182952660EB97002B5224 /* SettingViewController.swift in Sources */,
 			);
@@ -299,6 +379,7 @@
 		};
 		B79182922660E510002B5224 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C82E6E4F32E413DE32F9E1B5 /* Pods-AirPollutionCheck.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -317,6 +398,7 @@
 		};
 		B79182932660E510002B5224 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E52125AC52D4D5873BD81F6 /* Pods-AirPollutionCheck.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
