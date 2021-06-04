@@ -15,10 +15,9 @@
 		B791828A2660E510002B5224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B79182892660E510002B5224 /* Assets.xcassets */; };
 		B791828D2660E510002B5224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B791828B2660E510002B5224 /* LaunchScreen.storyboard */; };
 		B79182952660EB97002B5224 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79182942660EB97002B5224 /* SettingViewController.swift */; };
-		B79182982660F3AD002B5224 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B79182962660F3AD002B5224 /* WeatherCollectionViewCell.swift */; };
-		B79182992660F3AD002B5224 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B79182972660F3AD002B5224 /* WeatherCollectionViewCell.xib */; };
 		B791829B2660F9C6002B5224 /* PraciceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B791829A2660F9C6002B5224 /* PraciceViewController.swift */; };
 		B7A7B9A62667F26800E45307 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A7B9A52667F26800E45307 /* Constants.swift */; };
+		B7A7B9A8266A298400E45307 /* LocationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A7B9A7266A298400E45307 /* LocationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +32,9 @@
 		B791828C2660E510002B5224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B791828E2660E510002B5224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B79182942660EB97002B5224 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		B79182962660F3AD002B5224 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
-		B79182972660F3AD002B5224 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 		B791829A2660F9C6002B5224 /* PraciceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PraciceViewController.swift; sourceTree = "<group>"; };
 		B7A7B9A52667F26800E45307 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B7A7B9A7266A298400E45307 /* LocationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInfo.swift; sourceTree = "<group>"; };
 		C82E6E4F32E413DE32F9E1B5 /* Pods-AirPollutionCheck.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirPollutionCheck.debug.xcconfig"; path = "Target Support Files/Pods-AirPollutionCheck/Pods-AirPollutionCheck.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,17 +71,14 @@
 		B791827F2660E50F002B5224 /* AirPollutionCheck */ = {
 			isa = PBXGroup;
 			children = (
-				B7A7B9A42667F21C00E45307 /* Util */,
 				B79182802660E50F002B5224 /* AppDelegate.swift */,
 				B79182822660E50F002B5224 /* SceneDelegate.swift */,
-				B79182842660E50F002B5224 /* HomeViewController.swift */,
-				B79182942660EB97002B5224 /* SettingViewController.swift */,
+				B7A7B9A9266A57A100E45307 /* ViewController */,
+				B7A7B9A42667F21C00E45307 /* Util */,
 				B79182862660E50F002B5224 /* Main.storyboard */,
-				B791829A2660F9C6002B5224 /* PraciceViewController.swift */,
-				B79182962660F3AD002B5224 /* WeatherCollectionViewCell.swift */,
-				B79182972660F3AD002B5224 /* WeatherCollectionViewCell.xib */,
-				B79182892660E510002B5224 /* Assets.xcassets */,
 				B791828B2660E510002B5224 /* LaunchScreen.storyboard */,
+				B791829A2660F9C6002B5224 /* PraciceViewController.swift */,
+				B79182892660E510002B5224 /* Assets.xcassets */,
 				B791828E2660E510002B5224 /* Info.plist */,
 			);
 			path = AirPollutionCheck;
@@ -93,8 +88,18 @@
 			isa = PBXGroup;
 			children = (
 				B7A7B9A52667F26800E45307 /* Constants.swift */,
+				B7A7B9A7266A298400E45307 /* LocationInfo.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		B7A7B9A9266A57A100E45307 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B79182842660E50F002B5224 /* HomeViewController.swift */,
+				B79182942660EB97002B5224 /* SettingViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		DE97337E7AB4C206E6166F3A /* Pods */ = {
@@ -174,7 +179,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B791828D2660E510002B5224 /* LaunchScreen.storyboard in Resources */,
-				B79182992660F3AD002B5224 /* WeatherCollectionViewCell.xib in Resources */,
 				B791828A2660E510002B5224 /* Assets.xcassets in Resources */,
 				B79182882660E50F002B5224 /* Main.storyboard in Resources */,
 			);
@@ -229,8 +233,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B79182982660F3AD002B5224 /* WeatherCollectionViewCell.swift in Sources */,
 				B79182852660E50F002B5224 /* HomeViewController.swift in Sources */,
+				B7A7B9A8266A298400E45307 /* LocationInfo.swift in Sources */,
 				B791829B2660F9C6002B5224 /* PraciceViewController.swift in Sources */,
 				B79182812660E50F002B5224 /* AppDelegate.swift in Sources */,
 				B7A7B9A62667F26800E45307 /* Constants.swift in Sources */,
